@@ -17,7 +17,7 @@ def first_challenge
   contacts.each { |person, data|
     data.each { |key, value|
       if key == :favorite_icecream_flavors && value.include?("strawberry")
-        strawberry = value.indexOf("strawberry")
+        strawberry = value.index("strawberry")
         value.delete(strawberry)
       end
     }
